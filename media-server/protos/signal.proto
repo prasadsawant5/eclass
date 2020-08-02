@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package signal;
+
+message SignalRequest {}
+
+message IceCandidate {
+    string url = 1;
+}
+
+message OfferRequest {
+    string user_id = 1;
+}
+
+message OfferResponse {
+    repeated IceCandidate ice_candidate = 1;
+}
+
+service SignalService {
+    // unary API
+    rpc Offer (OfferRequest) returns (OfferResponse);
+}

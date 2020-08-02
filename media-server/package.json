@@ -1,0 +1,20 @@
+{
+  "name": "media-server",
+  "version": "1.0.0",
+  "description": "Media server for streaming videos in a multicast fashion using WebRTC",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prasad Sawant",
+  "license": "ISC",
+  "dependencies": {
+    "google-protobuf": "^3.12.4",
+    "grpc": "^1.24.3",
+    "wrtc": "^0.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
